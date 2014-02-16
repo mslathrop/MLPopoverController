@@ -21,6 +21,11 @@
 		666B43BD18B07EF800C943C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 666B439F18B07EF800C943C5 /* UIKit.framework */; };
 		666B43C518B07EF800C943C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 666B43C318B07EF800C943C5 /* InfoPlist.strings */; };
 		666B43C718B07EF800C943C5 /* MLPopoverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 666B43C618B07EF800C943C5 /* MLPopoverTests.m */; };
+		666B43D818B07FDC00C943C5 /* WYPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 666B43D418B07FDC00C943C5 /* WYPopoverController.m */; };
+		666B43DC18B07FE600C943C5 /* MLPopoverContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 666B43DB18B07FE600C943C5 /* MLPopoverContentController.m */; };
+		666B43DF18B0802100C943C5 /* MLPopoverItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 666B43DE18B0802100C943C5 /* MLPopoverItem.m */; };
+		666B43E218B082BB00C943C5 /* MLPopoverTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 666B43E118B082BB00C943C5 /* MLPopoverTableViewCell.m */; };
+		666B43E518B0837200C943C5 /* MLPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 666B43E418B0837200C943C5 /* MLPopoverController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,17 @@
 		666B43C218B07EF800C943C5 /* MLPopoverTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MLPopoverTests-Info.plist"; sourceTree = "<group>"; };
 		666B43C418B07EF800C943C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		666B43C618B07EF800C943C5 /* MLPopoverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLPopoverTests.m; sourceTree = "<group>"; };
+		666B43D318B07FDC00C943C5 /* WYPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYPopoverController.h; sourceTree = "<group>"; };
+		666B43D418B07FDC00C943C5 /* WYPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYPopoverController.m; sourceTree = "<group>"; };
+		666B43DA18B07FE600C943C5 /* MLPopoverContentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPopoverContentController.h; sourceTree = "<group>"; };
+		666B43DB18B07FE600C943C5 /* MLPopoverContentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLPopoverContentController.m; sourceTree = "<group>"; };
+		666B43DD18B0802100C943C5 /* MLPopoverItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPopoverItem.h; sourceTree = "<group>"; };
+		666B43DE18B0802100C943C5 /* MLPopoverItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLPopoverItem.m; sourceTree = "<group>"; };
+		666B43E018B082BB00C943C5 /* MLPopoverTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPopoverTableViewCell.h; sourceTree = "<group>"; };
+		666B43E118B082BB00C943C5 /* MLPopoverTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLPopoverTableViewCell.m; sourceTree = "<group>"; };
+		666B43E318B0837200C943C5 /* MLPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPopoverController.h; sourceTree = "<group>"; };
+		666B43E418B0837200C943C5 /* MLPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLPopoverController.m; sourceTree = "<group>"; };
+		666B43E618B088BD00C943C5 /* WYPopoverController_Protected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYPopoverController_Protected.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +128,10 @@
 		666B43A118B07EF800C943C5 /* MLPopover */ = {
 			isa = PBXGroup;
 			children = (
+				666B43D018B07F3300C943C5 /* Popover */,
+				666B43AD18B07EF800C943C5 /* Main.storyboard */,
 				666B43AA18B07EF800C943C5 /* MLAppDelegate.h */,
 				666B43AB18B07EF800C943C5 /* MLAppDelegate.m */,
-				666B43AD18B07EF800C943C5 /* Main.storyboard */,
 				666B43B018B07EF800C943C5 /* MLViewController.h */,
 				666B43B118B07EF800C943C5 /* MLViewController.m */,
 				666B43B318B07EF800C943C5 /* Images.xcassets */,
@@ -150,6 +167,32 @@
 				666B43C318B07EF800C943C5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		666B43D018B07F3300C943C5 /* Popover */ = {
+			isa = PBXGroup;
+			children = (
+				666B43DA18B07FE600C943C5 /* MLPopoverContentController.h */,
+				666B43DB18B07FE600C943C5 /* MLPopoverContentController.m */,
+				666B43E318B0837200C943C5 /* MLPopoverController.h */,
+				666B43E418B0837200C943C5 /* MLPopoverController.m */,
+				666B43DD18B0802100C943C5 /* MLPopoverItem.h */,
+				666B43DE18B0802100C943C5 /* MLPopoverItem.m */,
+				666B43E018B082BB00C943C5 /* MLPopoverTableViewCell.h */,
+				666B43E118B082BB00C943C5 /* MLPopoverTableViewCell.m */,
+				666B43D118B07FDC00C943C5 /* WYPopoverController */,
+			);
+			name = Popover;
+			sourceTree = "<group>";
+		};
+		666B43D118B07FDC00C943C5 /* WYPopoverController */ = {
+			isa = PBXGroup;
+			children = (
+				666B43D318B07FDC00C943C5 /* WYPopoverController.h */,
+				666B43D418B07FDC00C943C5 /* WYPopoverController.m */,
+				666B43E618B088BD00C943C5 /* WYPopoverController_Protected.h */,
+			);
+			path = WYPopoverController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,7 +295,12 @@
 			files = (
 				666B43A818B07EF800C943C5 /* main.m in Sources */,
 				666B43B218B07EF800C943C5 /* MLViewController.m in Sources */,
+				666B43E218B082BB00C943C5 /* MLPopoverTableViewCell.m in Sources */,
+				666B43DC18B07FE600C943C5 /* MLPopoverContentController.m in Sources */,
 				666B43AC18B07EF800C943C5 /* MLAppDelegate.m in Sources */,
+				666B43DF18B0802100C943C5 /* MLPopoverItem.m in Sources */,
+				666B43D818B07FDC00C943C5 /* WYPopoverController.m in Sources */,
+				666B43E518B0837200C943C5 /* MLPopoverController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
