@@ -33,8 +33,8 @@
 - (void)actionButtonTapped:(id)sender {
     
     MLPopoverItem *itemOne = [[MLPopoverItem alloc] initWithText:@"Item One"
-                                                           Image:[UIImage imageNamed:@"alert-circled"]
-                                                          Action:^{
+                                                           image:[UIImage imageNamed:@"alert-circled"]
+                                                          action:^{
                                                               UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Item One Selected"
                                                                                                                   message:nil
                                                                                                                  delegate:nil
@@ -44,8 +44,8 @@
                                                           }];
     
     MLPopoverItem *itemTwo = [[MLPopoverItem alloc] initWithText:@"Item Two"
-                                                           Image:[UIImage imageNamed:@"android-add-contact"]
-                                                          Action:^{
+                                                           image:[UIImage imageNamed:@"android-add-contact"]
+                                                          action:^{
                                                               UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Item Two Selected"
                                                                                                                   message:nil
                                                                                                                  delegate:nil
@@ -55,8 +55,8 @@
                                                           }];
     
     MLPopoverItem *itemThree = [[MLPopoverItem alloc] initWithText:@"Item Three"
-                                                             Image:[UIImage imageNamed:@"checkmark-circled"]
-                                                            Action:^{
+                                                             image:[UIImage imageNamed:@"checkmark-circled"]
+                                                            action:^{
                                                                 UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Item Three Selected"
                                                                                                                     message:nil
                                                                                                                    delegate:nil
@@ -66,7 +66,6 @@
                                                             }];
     
     _popover = [[MLPopoverController alloc] initWithMLPopoverItems:@[itemOne, itemTwo, itemThree]];
-    [_popover setPopoverContentSize:CGSizeMake(200, 340)];
     _popover.delegate = self;
     [_popover presentPopoverFromBarButtonItem:_actionButton permittedArrowDirections:WYPopoverArrowDirectionUp animated:YES];
 }

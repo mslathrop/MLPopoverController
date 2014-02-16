@@ -10,9 +10,10 @@
 
 #import "MLPopoverItem.h"
 
+#define kMarginSize 10
+
 @interface MLPopoverTableViewCell ()
 
-@property int marginSize;
 @property (nonatomic, strong) UIImageView *cellImageView;
 @property (nonatomic, strong) UILabel *cellLabel;
 
@@ -26,15 +27,12 @@
     if (self) {
         self.backgroundColor = [UIColor clearColor];
         
-        self.marginSize = 10;
-        
         // create the ImageView
-        self.cellImageView = [[UIImageView alloc] initWithFrame:CGRectMake(self.marginSize, 10, 20, 20)];
+        self.cellImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
         [self.contentView addSubview:self.cellImageView];
         
         // create the label
-        int xPos = self.marginSize + CGRectGetWidth(self.imageView.frame) + self.marginSize;
-        self.cellLabel = [[UILabel alloc] initWithFrame:CGRectMake(xPos, 10, self.bounds.size.width - self.marginSize - xPos, 20)];
+        self.cellLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
         [self.contentView addSubview:self.cellLabel];
         
     }
@@ -46,18 +44,45 @@
     _popoverItem = popoverItem;
     _cellImageView.image = _popoverItem.image;
     _cellLabel.text = _popoverItem.text;
+    [_cellLabel sizeToFit];
+    
+    [self layoutSubviews];
+    
+}
+
+- (void)layoutSubviews {
+    
+    [super layoutSubviews];
+    
+    float xPos = self.popoverItem.margin;
+    float yPos = 10.0f;
     
     if (_cellImageView.image) {
-        CGRect frame = _cellLabel.frame;
-        frame.origin.x = _cellImageView.frame.origin.x + _cellImageView.frame.size.width + _marginSize;
-        _cellLabel.frame = frame;
+        _cellImageView.frame = CGRectMake(xPos, yPos, self.popoverItem.imageViewWidth, self.popoverItem.imageViewWidth);
+        xPos += _cellImageView.frame.size.width + self.popoverItem.margin;
     }
-    else {
+    
+    if (_cellLabel.text) {
         CGRect frame = _cellLabel.frame;
-        frame.origin.x = _marginSize;
+        frame.origin.x = xPos;
+        frame.origin.y = yPos;
         _cellLabel.frame = frame;
     }
     
+}
+
+- (float)calculateCellWidth {
+    
+    float ret = 0.0f;
+    
+    if (_cellImageView.image) {
+        ret = kMarginSize * 3 + _cellImageView.frame.size.width + _cellLabel.frame.size.width;
+    }
+    else {
+        ret = kMarginSize * 3 + _cellLabel.frame.size.width;
+    }
+    
+    return ret;
 }
 
 @end

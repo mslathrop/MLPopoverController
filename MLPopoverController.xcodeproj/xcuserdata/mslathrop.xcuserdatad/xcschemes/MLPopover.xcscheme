@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "666B439718B07EF800C943C5"
-               BuildableName = "MLPopover.app"
+               BuildableName = "MLPopoverController.app"
                BlueprintName = "MLPopoverController"
                ReferencedContainer = "container:MLPopoverController.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "666B43B818B07EF800C943C5"
-               BuildableName = "MLPopoverTests.xctest"
+               BuildableName = "MLPopoverControllerTests.xctest"
                BlueprintName = "MLPopoverControllerTests"
                ReferencedContainer = "container:MLPopoverController.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "666B439718B07EF800C943C5"
-            BuildableName = "MLPopover.app"
+            BuildableName = "MLPopoverController.app"
             BlueprintName = "MLPopoverController"
             ReferencedContainer = "container:MLPopoverController.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "666B439718B07EF800C943C5"
-            BuildableName = "MLPopover.app"
+            BuildableName = "MLPopoverController.app"
             BlueprintName = "MLPopoverController"
             ReferencedContainer = "container:MLPopoverController.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "666B439718B07EF800C943C5"
-            BuildableName = "MLPopover.app"
+            BuildableName = "MLPopoverController.app"
             BlueprintName = "MLPopoverController"
             ReferencedContainer = "container:MLPopoverController.xcodeproj">
          </BuildableReference>
