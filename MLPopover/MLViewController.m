@@ -65,7 +65,18 @@
                                                                 [alertView show];
                                                             }];
     
-    _popover = [[MLPopoverController alloc] initWithMLPopoverItems:@[itemOne, itemTwo, itemThree]];
+    MLPopoverItem *itemFour = [[MLPopoverItem alloc] initWithText:@"Item Four"
+                                                            image:nil
+                                                           action:^{
+                                                               UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Item Three Selected"
+                                                                                                                   message:nil
+                                                                                                                  delegate:nil
+                                                                                                         cancelButtonTitle:@"Okay"
+                                                                                                         otherButtonTitles:nil];
+                                                               [alertView show];
+                                                           }];
+    
+    _popover = [[MLPopoverController alloc] initWithMLPopoverItems:@[itemOne, itemTwo, itemThree, itemFour]];
     _popover.delegate = self;
     [_popover presentPopoverFromBarButtonItem:_actionButton permittedArrowDirections:WYPopoverArrowDirectionUp animated:YES];
 }
