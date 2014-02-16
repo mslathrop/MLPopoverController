@@ -72,7 +72,7 @@
                 maxWidth = width;
             }
             
-            height += popoverItem.height;
+            height += 44.0f;
         }
     }
     

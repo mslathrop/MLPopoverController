@@ -15,7 +15,6 @@ typedef void (^MLPopoverItemAction)();
 @property (nonatomic, strong) NSString *text;
 @property (nonatomic, strong) UIImage *image;
 @property (nonatomic, strong) MLPopoverItemAction action;
-@property CGFloat height;
 @property CGFloat margin;
 @property CGFloat imageViewWidth;
 
@@ -26,7 +25,6 @@ typedef void (^MLPopoverItemAction)();
 - (instancetype)initWithText:(NSString *)text
                        image:(UIImage *)image
                       action:(MLPopoverItemAction)action
-                      height:(CGFloat)height
                       margin:(CGFloat)margin;
 
 @end

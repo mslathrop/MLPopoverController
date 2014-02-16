@@ -8,7 +8,6 @@
 
 #import "MLPopoverItem.h"
 
-#define kHeightDefault 44.0f
 #define kMarginDefault 10.0f
 #define kImageViewWidthDefault 20.0f
 
@@ -25,7 +24,6 @@
         _text = text;
         _image = image;
         _action = action;
-        _height = 44.0f;
         _margin = 10.0f;
         _imageViewWidth = kImageViewWidthDefault;
     }
@@ -37,7 +35,6 @@
 - (instancetype)initWithText:(NSString *)text
                        image:(UIImage *)image
                       action:(MLPopoverItemAction)action
-                      height:(CGFloat)height
                       margin:(CGFloat)margin {
     
     self = [super init];
@@ -47,7 +44,6 @@
         _text = text;
         _image = image;
         _action = action;
-        _height = height;
         _margin = margin;
         _imageViewWidth = kImageViewWidthDefault;
     }
