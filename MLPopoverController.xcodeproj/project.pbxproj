@@ -39,23 +39,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		666B439818B07EF800C943C5 /* MLPopover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLPopover.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		666B439818B07EF800C943C5 /* MLPopoverController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLPopoverController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		666B439B18B07EF800C943C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		666B439D18B07EF800C943C5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		666B439F18B07EF800C943C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		666B43A318B07EF800C943C5 /* MLPopover-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MLPopover-Info.plist"; sourceTree = "<group>"; };
+		666B43A318B07EF800C943C5 /* MLPopoverController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MLPopoverController-Info.plist"; sourceTree = "<group>"; };
 		666B43A518B07EF800C943C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		666B43A718B07EF800C943C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		666B43A918B07EF800C943C5 /* MLPopover-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MLPopover-Prefix.pch"; sourceTree = "<group>"; };
+		666B43A918B07EF800C943C5 /* MLPopoverController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MLPopoverController-Prefix.pch"; sourceTree = "<group>"; };
 		666B43AA18B07EF800C943C5 /* MLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLAppDelegate.h; sourceTree = "<group>"; };
 		666B43AB18B07EF800C943C5 /* MLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLAppDelegate.m; sourceTree = "<group>"; };
 		666B43AE18B07EF800C943C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		666B43B018B07EF800C943C5 /* MLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLViewController.h; sourceTree = "<group>"; };
 		666B43B118B07EF800C943C5 /* MLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLViewController.m; sourceTree = "<group>"; };
 		666B43B318B07EF800C943C5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		666B43B918B07EF800C943C5 /* MLPopoverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLPopoverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		666B43B918B07EF800C943C5 /* MLPopoverControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLPopoverControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		666B43BA18B07EF800C943C5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		666B43C218B07EF800C943C5 /* MLPopoverTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MLPopoverTests-Info.plist"; sourceTree = "<group>"; };
+		666B43C218B07EF800C943C5 /* MLPopoverControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MLPopoverControllerTests-Info.plist"; sourceTree = "<group>"; };
 		666B43C418B07EF800C943C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		666B43C618B07EF800C943C5 /* MLPopoverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLPopoverTests.m; sourceTree = "<group>"; };
 		666B43D318B07FDC00C943C5 /* WYPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYPopoverController.h; sourceTree = "<group>"; };
@@ -108,8 +108,8 @@
 		666B439918B07EF800C943C5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				666B439818B07EF800C943C5 /* MLPopover.app */,
-				666B43B918B07EF800C943C5 /* MLPopoverTests.xctest */,
+				666B439818B07EF800C943C5 /* MLPopoverController.app */,
+				666B43B918B07EF800C943C5 /* MLPopoverControllerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,7 +128,7 @@
 		666B43A118B07EF800C943C5 /* MLPopoverProject */ = {
 			isa = PBXGroup;
 			children = (
-				666B43D018B07F3300C943C5 /* MLPopover */,
+				666B43D018B07F3300C943C5 /* MLPopoverController */,
 				666B43AD18B07EF800C943C5 /* Main.storyboard */,
 				666B43AA18B07EF800C943C5 /* MLAppDelegate.h */,
 				666B43AB18B07EF800C943C5 /* MLAppDelegate.m */,
@@ -144,10 +144,10 @@
 		666B43A218B07EF800C943C5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				666B43A318B07EF800C943C5 /* MLPopover-Info.plist */,
+				666B43A318B07EF800C943C5 /* MLPopoverController-Info.plist */,
 				666B43A418B07EF800C943C5 /* InfoPlist.strings */,
 				666B43A718B07EF800C943C5 /* main.m */,
-				666B43A918B07EF800C943C5 /* MLPopover-Prefix.pch */,
+				666B43A918B07EF800C943C5 /* MLPopoverController-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -164,13 +164,13 @@
 		666B43C118B07EF800C943C5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				666B43C218B07EF800C943C5 /* MLPopoverTests-Info.plist */,
+				666B43C218B07EF800C943C5 /* MLPopoverControllerTests-Info.plist */,
 				666B43C318B07EF800C943C5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		666B43D018B07F3300C943C5 /* MLPopover */ = {
+		666B43D018B07F3300C943C5 /* MLPopoverController */ = {
 			isa = PBXGroup;
 			children = (
 				666B43DA18B07FE600C943C5 /* MLPopoverContentController.h */,
@@ -183,7 +183,7 @@
 				666B43E118B082BB00C943C5 /* MLPopoverTableViewCell.m */,
 				666B43D118B07FDC00C943C5 /* WYPopoverController */,
 			);
-			name = MLPopover;
+			name = MLPopoverController;
 			sourceTree = "<group>";
 		};
 		666B43D118B07FDC00C943C5 /* WYPopoverController */ = {
@@ -199,9 +199,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		666B439718B07EF800C943C5 /* MLPopover */ = {
+		666B439718B07EF800C943C5 /* MLPopoverController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 666B43CA18B07EF800C943C5 /* Build configuration list for PBXNativeTarget "MLPopover" */;
+			buildConfigurationList = 666B43CA18B07EF800C943C5 /* Build configuration list for PBXNativeTarget "MLPopoverController" */;
 			buildPhases = (
 				666B439418B07EF800C943C5 /* Sources */,
 				666B439518B07EF800C943C5 /* Frameworks */,
@@ -211,14 +211,14 @@
 			);
 			dependencies = (
 			);
-			name = MLPopover;
+			name = MLPopoverController;
 			productName = MLPopover;
-			productReference = 666B439818B07EF800C943C5 /* MLPopover.app */;
+			productReference = 666B439818B07EF800C943C5 /* MLPopoverController.app */;
 			productType = "com.apple.product-type.application";
 		};
-		666B43B818B07EF800C943C5 /* MLPopoverTests */ = {
+		666B43B818B07EF800C943C5 /* MLPopoverControllerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 666B43CD18B07EF800C943C5 /* Build configuration list for PBXNativeTarget "MLPopoverTests" */;
+			buildConfigurationList = 666B43CD18B07EF800C943C5 /* Build configuration list for PBXNativeTarget "MLPopoverControllerTests" */;
 			buildPhases = (
 				666B43B518B07EF800C943C5 /* Sources */,
 				666B43B618B07EF800C943C5 /* Frameworks */,
@@ -229,9 +229,9 @@
 			dependencies = (
 				666B43BF18B07EF800C943C5 /* PBXTargetDependency */,
 			);
-			name = MLPopoverTests;
+			name = MLPopoverControllerTests;
 			productName = MLPopoverTests;
-			productReference = 666B43B918B07EF800C943C5 /* MLPopoverTests.xctest */;
+			productReference = 666B43B918B07EF800C943C5 /* MLPopoverControllerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -249,7 +249,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 666B439318B07EF800C943C5 /* Build configuration list for PBXProject "MLPopover" */;
+			buildConfigurationList = 666B439318B07EF800C943C5 /* Build configuration list for PBXProject "MLPopoverController" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -262,8 +262,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				666B439718B07EF800C943C5 /* MLPopover */,
-				666B43B818B07EF800C943C5 /* MLPopoverTests */,
+				666B439718B07EF800C943C5 /* MLPopoverController */,
+				666B43B818B07EF800C943C5 /* MLPopoverControllerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -318,7 +318,7 @@
 /* Begin PBXTargetDependency section */
 		666B43BF18B07EF800C943C5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 666B439718B07EF800C943C5 /* MLPopover */;
+			target = 666B439718B07EF800C943C5 /* MLPopoverController */;
 			targetProxy = 666B43BE18B07EF800C943C5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -429,9 +429,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MLPopover/MLPopover-Prefix.pch";
-				INFOPLIST_FILE = "MLPopover/MLPopover-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MLPopover/MLPopoverController-Prefix.pch";
+				INFOPLIST_FILE = "MLPopover/MLPopoverController-Info.plist";
+				PRODUCT_NAME = MLPopoverController;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -442,9 +442,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MLPopover/MLPopover-Prefix.pch";
-				INFOPLIST_FILE = "MLPopover/MLPopover-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MLPopover/MLPopoverController-Prefix.pch";
+				INFOPLIST_FILE = "MLPopover/MLPopoverController-Info.plist";
+				PRODUCT_NAME = MLPopoverController;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -465,8 +465,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "MLPopoverTests/MLPopoverTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "MLPopoverTests/MLPopoverControllerTests-Info.plist";
+				PRODUCT_NAME = MLPopoverControllerTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -484,8 +484,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MLPopover/MLPopover-Prefix.pch";
-				INFOPLIST_FILE = "MLPopoverTests/MLPopoverTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "MLPopoverTests/MLPopoverControllerTests-Info.plist";
+				PRODUCT_NAME = MLPopoverControllerTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -494,7 +494,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		666B439318B07EF800C943C5 /* Build configuration list for PBXProject "MLPopover" */ = {
+		666B439318B07EF800C943C5 /* Build configuration list for PBXProject "MLPopoverController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				666B43C818B07EF800C943C5 /* Debug */,
@@ -503,21 +503,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		666B43CA18B07EF800C943C5 /* Build configuration list for PBXNativeTarget "MLPopover" */ = {
+		666B43CA18B07EF800C943C5 /* Build configuration list for PBXNativeTarget "MLPopoverController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				666B43CB18B07EF800C943C5 /* Debug */,
 				666B43CC18B07EF800C943C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		666B43CD18B07EF800C943C5 /* Build configuration list for PBXNativeTarget "MLPopoverTests" */ = {
+		666B43CD18B07EF800C943C5 /* Build configuration list for PBXNativeTarget "MLPopoverControllerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				666B43CE18B07EF800C943C5 /* Debug */,
 				666B43CF18B07EF800C943C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
