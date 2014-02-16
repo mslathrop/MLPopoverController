@@ -59,14 +59,14 @@
                 NSDictionary *stringAttributes = [NSDictionary dictionaryWithObject:[UIFont preferredFontForTextStyle:UIFontTextStyleBody] forKey: NSFontAttributeName];
                 CGRect frame = CGRectIntegral([popoverItem.text
                                                boundingRectWithSize:CGSizeMake(FLT_MAX, FLT_MAX)
-                                               options:NSStringDrawingUsesLineFragmentOrigin
+                                               options:NSStringDrawingUsesFontLeading
                                                attributes:stringAttributes
                                                context:nil]);
                 width += frame.size.width;
             }
             
             // right margin
-            width += popoverItem.margin;
+            width += popoverItem.margin * 2;
             
             if (width > maxWidth) {
                 maxWidth = width;
