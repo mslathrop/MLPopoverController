@@ -28,11 +28,11 @@
         self.backgroundColor = [UIColor clearColor];
         
         // create the ImageView
-        self.cellImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
+        self.cellImageView = [[UIImageView alloc] init];
         [self.contentView addSubview:self.cellImageView];
         
         // create the label
-        self.cellLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
+        self.cellLabel = [[UILabel alloc] init];
         [self.contentView addSubview:self.cellLabel];
         
     }
