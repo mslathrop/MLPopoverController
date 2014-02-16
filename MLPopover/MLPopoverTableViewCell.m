@@ -47,9 +47,16 @@
     _cellImageView.image = _popoverItem.image;
     _cellLabel.text = _popoverItem.text;
     
-    CGRect frame = _cellLabel.frame;
-    frame.origin.x = _cellImageView.frame.origin.x + _cellImageView.frame.size.width + _marginSize;
-    _cellLabel.frame = frame;
+    if (_cellImageView.image) {
+        CGRect frame = _cellLabel.frame;
+        frame.origin.x = _cellImageView.frame.origin.x + _cellImageView.frame.size.width + _marginSize;
+        _cellLabel.frame = frame;
+    }
+    else {
+        CGRect frame = _cellLabel.frame;
+        frame.origin.x = _marginSize;
+        _cellLabel.frame = frame;
+    }
     
 }
 
