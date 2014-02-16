@@ -98,7 +98,7 @@
 		666B438F18B07EF800C943C5 = {
 			isa = PBXGroup;
 			children = (
-				666B43A118B07EF800C943C5 /* MLPopover */,
+				666B43A118B07EF800C943C5 /* MLPopoverProject */,
 				666B43C018B07EF800C943C5 /* MLPopoverTests */,
 				666B439A18B07EF800C943C5 /* Frameworks */,
 				666B439918B07EF800C943C5 /* Products */,
@@ -125,10 +125,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		666B43A118B07EF800C943C5 /* MLPopover */ = {
+		666B43A118B07EF800C943C5 /* MLPopoverProject */ = {
 			isa = PBXGroup;
 			children = (
-				666B43D018B07F3300C943C5 /* Popover */,
+				666B43D018B07F3300C943C5 /* MLPopover */,
 				666B43AD18B07EF800C943C5 /* Main.storyboard */,
 				666B43AA18B07EF800C943C5 /* MLAppDelegate.h */,
 				666B43AB18B07EF800C943C5 /* MLAppDelegate.m */,
@@ -137,6 +137,7 @@
 				666B43B318B07EF800C943C5 /* Images.xcassets */,
 				666B43A218B07EF800C943C5 /* Supporting Files */,
 			);
+			name = MLPopoverProject;
 			path = MLPopover;
 			sourceTree = "<group>";
 		};
@@ -169,7 +170,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		666B43D018B07F3300C943C5 /* Popover */ = {
+		666B43D018B07F3300C943C5 /* MLPopover */ = {
 			isa = PBXGroup;
 			children = (
 				666B43DA18B07FE600C943C5 /* MLPopoverContentController.h */,
@@ -182,7 +183,7 @@
 				666B43E118B082BB00C943C5 /* MLPopoverTableViewCell.m */,
 				666B43D118B07FDC00C943C5 /* WYPopoverController */,
 			);
-			name = Popover;
+			name = MLPopover;
 			sourceTree = "<group>";
 		};
 		666B43D118B07FDC00C943C5 /* WYPopoverController */ = {
