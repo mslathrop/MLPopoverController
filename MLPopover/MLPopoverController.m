@@ -12,29 +12,33 @@
 #import "MLPopoverItem.h"
 #import "WYPopoverController_Protected.h"
 
+@interface MLPopoverController ()
+
+@property BOOL sizeToFit;
+
+@end
+
 @implementation MLPopoverController
 
 - (instancetype)initWithMLPopoverItems:(NSArray *)popoverItems {
-    
     return [self initWithMLPopoverItems:popoverItems sizeToFit:YES];
-    
 }
 
 - (instancetype)initWithMLPopoverItems:(NSArray *)popoverItems sizeToFit:(BOOL)sizeToFit {
-    
     MLPopoverContentController *contentController = [[MLPopoverContentController alloc] initWithPopoverItems:popoverItems];
     
     self = [super initWithContentViewController:contentController];
     
+    _sizeToFit = sizeToFit;
+    
     if (self)
     {
-        if (sizeToFit) {
+        if (_sizeToFit) {
             [self sizePopoverContentToFitPopoverItems:popoverItems];
         }
     }
     
     return self;
-    
 }
 
 - (void)sizePopoverContentToFitPopoverItems:(NSArray *)popoverItems {
@@ -78,6 +82,15 @@
     
     self.popoverContentSize = CGSizeMake(ceilf(maxWidth), ceilf(height));
     
+}
+
+- (void)replaceItemAtIndex:(NSInteger)index withPopoverItem:(MLPopoverItem *)popoverItem {
+    MLPopoverContentController *contentController = (MLPopoverContentController *)self.contentViewController;
+    [contentController replaceItemAtIndex:index withPopoverItem:popoverItem];
+    
+    if (_sizeToFit) {
+        [self sizePopoverContentToFitPopoverItems:contentController.popoverItems];
+    }
 }
 
 @end

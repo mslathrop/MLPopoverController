@@ -12,8 +12,6 @@
 
 @interface MLPopoverContentController ()
 
-@property (nonatomic, strong) NSArray *popoverItems;
-
 @end
 
 @implementation MLPopoverContentController
@@ -77,6 +75,22 @@ static NSString *cellIdentifier = @"MLPopoverTableViewCell";
         cell.popoverItem.action();
     }
     
+}
+
+- (void)replaceItemAtIndex:(NSInteger)index withPopoverItem:(MLPopoverItem *)popoverItem {
+    NSMutableArray *newArray = [NSMutableArray new];
+    
+    for (int i = 0; i < _popoverItems.count; i++) {
+        if (i == index) {
+            [newArray addObject:popoverItem];
+        }
+        else {
+            [newArray addObject:_popoverItems[i]];
+        }
+    }
+    
+    _popoverItems = newArray;
+    [self.tableView reloadData];
 }
 
 @end

@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class MLPopoverItem;
+
 @interface MLPopoverContentController : UITableViewController
 
+@property (nonatomic, strong) NSArray *popoverItems;
+
 - (instancetype)initWithPopoverItems:(NSArray *)popoverItems;
+- (void)replaceItemAtIndex:(NSInteger)index withPopoverItem:(MLPopoverItem *)popoverItem;
 
 @end

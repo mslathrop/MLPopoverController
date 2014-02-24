@@ -8,8 +8,12 @@
 
 #import "WYPopoverController.h"
 
+@class MLPopoverItem;
+
 @interface MLPopoverController : WYPopoverController
 
 - (instancetype)initWithMLPopoverItems:(NSArray *)popoverItems;
+
+- (void)replaceItemAtIndex:(NSInteger)index withPopoverItem:(MLPopoverItem *)popoverItem;
 
 @end
